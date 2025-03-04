@@ -1,0 +1,57 @@
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  @extend %Montserrat-300;
+  font-size: 16px;
+  line-height: 1.4;
+  color: $white;
+  background-color: $dark;
+  position: relative;
+  &.lock {
+    overflow: hidden;
+  }
+}
+a {
+  color: inherit;
+}
+.main {
+  flex-grow: 1;
+}
+.container {
+  max-width: 1240px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+.go-top {
+  display: none;
+  width: 50px;
+  height: 50px;
+  background-color: rgba($color: $blue, $alpha: .6);
+  position: fixed;
+  z-index: 10;
+  bottom: 20px;
+  right:20px;
+  &--active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  svg{
+    path {
+      fill: $white;
+    }
+  }
+  &:hover {
+    background-color: rgba($color: $blue, $alpha: 1);
+  }
+  &:active {
+    background-color: rgba($color: $blue, $alpha: .5);
+  }
+}

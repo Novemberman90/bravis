@@ -1,0 +1,43 @@
+
+$dark: #222;
+$black: #2a2c33;
+$black-ligth: #373941;
+$blue: #22a1c4;
+$white: #fff;
+$green: #3a8e2f;
+
+%Montserrat-500 {
+  font-family: 'Montserrat-Medium';
+  font-weight: 500;
+}
+%Montserrat-400 {
+  font-family: 'Montserrat-Regular';
+  font-weight: 400;
+}
+%Montserrat-300 {
+  font-family: 'Montserrat-Light';
+  font-weight: 300;
+}
+
+ %checkbox-hidden,
+ %radio-hidden {
+   width: 1px;
+   height: 1px;
+   overflow: hidden;
+   clip: rect(0 0 0 0);
+   position: absolute;
+ }
+ %uppercase{
+   text-transform: uppercase;
+ }
+ %capitalaize {
+  text-transform: capitalize;
+ }
+
+ %visual-hiden {
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    clip: rect(0 0 0 0);
+    position: absolute;
+ }
