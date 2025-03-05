@@ -1,14 +1,20 @@
 
 $body: #101212;
-$header-content: #101416;
+$header-content: #101416; 
 $bullet-bg: #6e6a66;
 $bullet-active: #d7cfc2;
-$black: #2a2c33;
-$black-ligth: #373941;
+$black: #1d242b; 
+$black-ligth: #2b3642;
+$black-ligth2: #2b353f;
 $blue-accent: #0087ae;
+$pink: #dd1657;
 $white: #fff;
 $green: #3a8e2f;
 
+%Montserrat-600 {
+  font-family: 'Montserrat-SemiBold';
+  font-weight: 600;
+}
 %Montserrat-500 {
   font-family: 'Montserrat-Medium';
   font-weight: 500;
@@ -20,6 +26,10 @@ $green: #3a8e2f;
 %Montserrat-300 {
   font-family: 'Montserrat-Light';
   font-weight: 300;
+}
+%Montserrat-200 {
+  font-family: 'Montserrat-ExtraLight';
+  font-weight: 200;
 }
 
  %checkbox-hidden,

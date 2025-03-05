@@ -1,14 +1,35 @@
 @charset "UTF-8";
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_vars\.scss}line{font-family:\0000312}}
-.footer__number {
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_vars\.scss}line{font-family:\0000314}}
+.catalog-card__title, .catalog-card__btn {
+  font-family: 'Montserrat-SemiBold';
+  font-weight: 600; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_vars\.scss}line{font-family:\0000318}}
+.catalog-card__size-link, .footer__number {
   font-family: 'Montserrat-Medium';
   font-weight: 500; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_vars\.scss}line{font-family:\0000316}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_vars\.scss}line{font-family:\0000322}}
 body {
   font-family: 'Montserrat-Regular';
   font-weight: 400; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_vars\.scss}line{font-family:\0000326}}
+.catalog-card__subtitle {
+  font-family: 'Montserrat-Light';
+  font-weight: 300; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_vars\.scss}line{font-family:\0000330}}
+.catalog-card__descr-item {
+  font-family: 'Montserrat-ExtraLight';
+  font-weight: 200; }
+
+@font-face {
+  font-family: 'Montserrat-SemiBold';
+  font-weight: 600;
+  font-style: normal;
+  src: local("Montserrat-SemiBold"), url("../fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../fonts/Montserrat-SemiBold.woff") format("woff");
+  font-display: swap; }
 @font-face {
   font-family: 'Montserrat-Medium';
   font-weight: 500;
@@ -26,6 +47,12 @@ body {
   font-weight: 300;
   font-style: normal;
   src: local("Montserrat-Light"), url("../fonts/Montserrat-Light.woff2") format("woff2"), url("../fonts/Montserrat-Light.woff") format("woff");
+  font-display: swap; }
+@font-face {
+  font-family: 'Montserrat-ExtraLight';
+  font-weight: 200;
+  font-style: normal;
+  src: local("Montserrat-ExtraLight"), url("../fonts/Montserrat-ExtraLight.woff2") format("woff2"), url("../fonts/Montserrat-ExtraLight.woff") format("woff");
   font-display: swap; }
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/reset\.scss}line{font-family:\000031}}
 html {
@@ -414,19 +441,119 @@ a {
 .catalog-card {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003124}}
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003126}}
   .catalog-card__item {
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 12px 12px 12px 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border: 2px solid #2b353f;
     overflow: hidden;
-    width: 226px;
-    height: 475px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003133}}
+    background-color: #1d242b;
+    width: 225px;
+    min-height: 475px;
+    border-radius: 10px;
+    -webkit-transition: all .4s;
+    transition: all .4s; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003136}}
+    .catalog-card__item:hover {
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1);
+      -webkit-transition: all .4s;
+      transition: all .4s;
+      z-index: 5; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003140}}
+      .catalog-card__item:hover .catalog-card__btn--accent {
+        -webkit-transition: all .4s;
+        transition: all .4s;
+        background-color: #dd1657; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003146}}
+  .catalog-card__img {
+    width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003151}}
   .catalog-card__content {
-    padding-top: 165px; }
+    padding: 10px 15px 30px 15px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003154}}
+  .catalog-card ul.catalog-card__size-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 7px;
+    margin-bottom: 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003160}}
+  .catalog-card__size-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #2b3642;
+    font-size: 11px;
+    line-height: 27px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003171}}
+    .catalog-card__size-link--active {
+      background-color: #1d242b;
+      border: 2px solid #0087ae; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003175}}
+    .catalog-card__size-link:hover {
+      border: 2px solid #0087ae; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003179}}
+  .catalog-card__title-box {
+    margin-bottom: 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003182}}
+  .catalog-card__title {
+    font-size: 18px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003186}}
+  .catalog-card__subtitle {
+    font-size: 14px;
+    line-height: 1.3; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003191}}
+  .catalog-card ul.catalog-card__descr-list {
+    list-style: disc;
+    padding-left: 15px;
+    margin-bottom: 30px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003196}}
+  .catalog-card__descr-item {
+    font-size: 11px;
+    line-height: 1.8; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003201}}
+  .catalog-card__btn {
+    display: block;
+    padding: 10px 50px;
+    font-size: 14px;
+    line-height: 1.3;
+    color: #1d242b;
+    background-color: #fff;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003212}}
+    .catalog-card__btn:last-child {
+      margin-bottom: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003215}}
+    .catalog-card__btn--accent {
+      background-color: #0087ae;
+      color: #fff; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_footer\.scss}line{font-family:\000031}}
 .footer {
