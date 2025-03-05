@@ -1,8 +1,38 @@
 @charset "UTF-8";
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_vars\.scss}line{font-family:\0000312}}
+.footer__number {
+  font-family: 'Montserrat-Medium';
+  font-weight: 500; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_vars\.scss}line{font-family:\0000316}}
+body {
+  font-family: 'Montserrat-Regular';
+  font-weight: 400; }
+
+@font-face {
+  font-family: 'Montserrat-Medium';
+  font-weight: 500;
+  font-style: normal;
+  src: local("Montserrat-Medium"), url("../fonts/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Medium.woff") format("woff");
+  font-display: swap; }
+@font-face {
+  font-family: 'Montserrat-Regular';
+  font-weight: 400;
+  font-style: normal;
+  src: local("Montserrat-Regular"), url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff");
+  font-display: swap; }
+@font-face {
+  font-family: 'Montserrat-Light';
+  font-weight: 300;
+  font-style: normal;
+  src: local("Montserrat-Light"), url("../fonts/Montserrat-Light.woff2") format("woff2"), url("../fonts/Montserrat-Light.woff") format("woff");
+  font-display: swap; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/reset\.scss}line{font-family:\000031}}
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/reset\.scss}line{font-family:\000035}}
 *,
 *::after,
 *::before {
@@ -10,10 +40,12 @@ html {
           box-sizing: inherit; }
 
 /* обнуляю стили у списков только у тех у кого есть класс */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/reset\.scss}line{font-family:\0000312}}
 ul[class],
 ol[class] {
   padding: 0; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/reset\.scss}line{font-family:\0000317}}
 body,
 h1,
 h2,
@@ -32,23 +64,455 @@ dl,
 dd {
   margin: 0; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/reset\.scss}line{font-family:\0000336}}
 ul[class] {
   list-style: none; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/reset\.scss}line{font-family:\0000340}}
 img {
   max-width: 100%;
   display: block; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/reset\.scss}line{font-family:\0000345}}
 input,
 button,
 textarea,
 select {
   font: inherit; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/reset\.scss}line{font-family:\0000351}}
 button {
   -webkit-tap-highlight-color: transparent; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/reset\.scss}line{font-family:\0000354}}
 a {
   text-decoration: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_global\.scss}line{font-family:\000032}}
+html,
+body {
+  height: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_global\.scss}line{font-family:\000037}}
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #fff;
+  background-color: #101212;
+  position: relative; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_global\.scss}line{font-family:\0000316}}
+  body.lock {
+    overflow: hidden; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_global\.scss}line{font-family:\0000320}}
+a {
+  color: inherit; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_global\.scss}line{font-family:\0000323}}
+.main {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_global\.scss}line{font-family:\0000326}}
+.container {
+  max-width: 1240px;
+  padding: 0 20px;
+  margin: 0 auto; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_global\.scss}line{font-family:\0000331}}
+.title {
+  font-size: 36px;
+  color: #0087ae; }
+
+@media (max-width: 578px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_global\.scss}line{font-family:\0000337}}
+  .container {
+    max-width: 445px;
+    padding: 0 10px;
+    margin: 0 auto; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_header\.scss}line{font-family:\000031}}
+.header {
+  padding: 20px 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_header\.scss}line{font-family:\000033}}
+  .header__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_header\.scss}line{font-family:\000037}}
+  .header__logo {
+    display: inline-block; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_header\.scss}line{font-family:\0000312}}
+.menu {
+  margin: 0 auto; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_header\.scss}line{font-family:\0000314}}
+  .menu__btn {
+    display: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_header\.scss}line{font-family:\0000318}}
+  .menu__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 25px;
+    margin: 0 auto; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_header\.scss}line{font-family:\0000324}}
+  .menu__link {
+    color: #fff; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_header\.scss}line{font-family:\0000326}}
+    .menu__link:hover {
+      color: #0087ae;
+      padding-bottom: 7px;
+      border-bottom: 1px solid #0087ae; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_header\.scss}line{font-family:\0000331}}
+    .menu__link--active {
+      color: #0087ae;
+      padding-bottom: 7px;
+      border-bottom: 1px solid #0087ae; }
+
+@media (max-width: 990px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_header\.scss}line{font-family:\0000343}}
+  .menu__block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100vh;
+    background-color: #101212;
+    z-index: 100;
+    -webkit-transform: translateY(-200%);
+            transform: translateY(-200%);
+    -webkit-transition: -webkit-transform .5s;
+    transition: -webkit-transform .5s;
+    transition: transform .5s;
+    transition: transform .5s, -webkit-transform .5s; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_header\.scss}line{font-family:\0000358}}
+    .menu__block--active {
+      -webkit-transform: translateY(0);
+              transform: translateY(0); }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_header\.scss}line{font-family:\0000363}}
+  .menu__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_header\.scss}line{font-family:\0000369}}
+  .menu__btn {
+    display: block;
+    border: none;
+    width: 40px;
+    height: 26px;
+    position: relative;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 150; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_header\.scss}line{font-family:\0000379}}
+    .menu__btn::before, .menu__btn::after {
+      content: '';
+      left: 0;
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 4px;
+      border-radius: 10px;
+      background-color: #fff; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_header\.scss}line{font-family:\0000391}}
+    .menu__btn::before {
+      top: 0;
+      -webkit-box-shadow: 0 11px 0 #fff;
+              box-shadow: 0 11px 0 #fff;
+      -webkit-transition: top .3s .15s, -webkit-box-shadow .3s .15s, -webkit-transform .3s;
+      transition: top .3s .15s, -webkit-box-shadow .3s .15s, -webkit-transform .3s;
+      transition: box-shadow .3s .15s, top .3s .15s, transform .3s;
+      transition: box-shadow .3s .15s, top .3s .15s, transform .3s, -webkit-box-shadow .3s .15s, -webkit-transform .3s; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_header\.scss}line{font-family:\0000397}}
+    .menu__btn::after {
+      bottom: 0;
+      -webkit-transition: bottom .3s .15s, -webkit-transform .3s;
+      transition: bottom .3s .15s, -webkit-transform .3s;
+      transition: bottom .3s .15s, transform .3s;
+      transition: bottom .3s .15s, transform .3s, -webkit-transform .3s; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_header\.scss}line{font-family:\00003103}}
+    .menu__btn--active::before {
+      top: 11px;
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg);
+      -webkit-box-shadow: 0 6px 0 rgba(0, 0, 0, 0);
+              box-shadow: 0 6px 0 rgba(0, 0, 0, 0);
+      -webkit-transition: top .3s, -webkit-box-shadow .15s, -webkit-transform .3s .15s;
+      transition: top .3s, -webkit-box-shadow .15s, -webkit-transform .3s .15s;
+      transition: box-shadow .15s, top .3s, transform .3s .15s;
+      transition: box-shadow .15s, top .3s, transform .3s .15s, -webkit-box-shadow .15s, -webkit-transform .3s .15s; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_header\.scss}line{font-family:\00003110}}
+    .menu__btn--active::after {
+      bottom: 11px;
+      -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+      -webkit-transition: bottom .3s, -webkit-transform .3s .15s;
+      transition: bottom .3s, -webkit-transform .3s .15s;
+      transition: bottom .3s, transform .3s .15s;
+      transition: bottom .3s, transform .3s .15s, -webkit-transform .3s .15s; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\000032}}
+.hero {
+  position: relative;
+  background-image: url("../images/top-slider/slider-item2.png");
+  background-color: #101416;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 550px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\0000310}}
+  .hero::before {
+    background-image: url("../images/hero-bg.png");
+    position: absolute;
+    content: '';
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    right: 0;
+    top: 0;
+    bottom: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\0000322}}
+  .hero__inner {
+    padding-top: 60px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\0000325}}
+  .hero__logo {
+    width: 194px;
+    height: auto;
+    -o-object-fit: contain;
+       object-fit: contain; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\0000330}}
+  .hero__slider {
+    position: relative;
+    padding-top: 160px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\0000337}}
+.top-slider {
+  width: 100%;
+  height: 100%;
+  position: relative; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\0000341}}
+  .top-slider__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\0000345}}
+  .top-slider__slide {
+    height: 100%;
+    width: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\0000350}}
+  .top-slider__slide-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\0000355}}
+  .top-slider__slide-title {
+    font-size: 40px;
+    width: 230px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\0000359}}
+  .top-slider__pagination {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 15px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%); }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\0000367}}
+  .top-slider__bullet {
+    background-color: #6e6a66;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\0000373}}
+    .top-slider__bullet--active {
+      background-color: #d7cfc2; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\0000379}}
+.about {
+  padding: 120px 0 160px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\0000385}}
+  .about::after {
+    background-image: url("../images/content/about-bg.png");
+    position: absolute;
+    content: '';
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    right: 0;
+    top: 0;
+    bottom: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\0000397}}
+  .about__title {
+    margin-bottom: 25px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003100}}
+  .about__text {
+    max-width: 846px;
+    width: 100%;
+    line-height: 24px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003104}}
+    .about__text p {
+      margin-bottom: 35px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003106}}
+      .about__text p:last-child {
+        margin-bottom: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003113}}
+.catalog {
+  padding: 100px 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003115}}
+  .catalog__title {
+    text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003118}}
+  .catalog__inner {
+    padding-top: 50px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003122}}
+.catalog-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003124}}
+  .catalog-card__item {
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 12px 12px 12px 12px;
+    overflow: hidden;
+    width: 226px;
+    height: 475px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003133}}
+  .catalog-card__content {
+    padding-top: 165px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_footer\.scss}line{font-family:\000031}}
+.footer {
+  padding: 30px 0;
+  background-color: #0087ae; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_footer\.scss}line{font-family:\000034}}
+  .footer__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_footer\.scss}line{font-family:\000039}}
+  .footer__social-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_footer\.scss}line{font-family:\0000314}}
+  .footer__social-link {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 50%;
+    background-color: #fff;
+    width: 28px;
+    height: 28px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_footer\.scss}line{font-family:\0000323}}
+    .footer__social-link svg path {
+      fill: #0087ae; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_footer\.scss}line{font-family:\0000328}}
+  .footer__phone, .footer__rules {
+    font-size: 18px;
+    line-height: 24px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_footer\.scss}line{font-family:\0000333}}
+  .footer__number {
+    font-size: 24px;
+    padding-left: 15px; }
+
+@media (max-width: 578px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_footer\.scss}line{font-family:\0000343}}
+  .footer__inner {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_footer\.scss}line{font-family:\0000346}}
+  .footer__social-list {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_footer\.scss}line{font-family:\0000349}}
+  .footer__phone {
+    display: block;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 70%;
+            flex: 0 0 70%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_footer\.scss}line{font-family:\0000354}}
+  .footer__rules {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    margin-left: auto; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_footer\.scss}line{font-family:\0000358}}
+  .footer__phone, .footer__rules {
+    font-size: 12px;
+    line-height: 21px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_footer\.scss}line{font-family:\0000364}}
+  .footer__number {
+    display: block;
+    font-size: 20px;
+    line-height: 20px;
+    padding-left: 0; } }
 
 /*# sourceMappingURL=style.css.map */

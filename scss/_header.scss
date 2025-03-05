@@ -1,5 +1,16 @@
+.header {
+  padding: 20px 0;
+  &__inner {
+    display: flex;
+    align-items: center;
+  }
+  &__logo {
+    display: inline-block;
+  }
 
+}
 .menu {
+  margin: 0 auto;
   &__btn {
     display: none;
   }
@@ -7,9 +18,23 @@
   &__list {
     display: flex;
     align-items: center;
+    gap: 25px;
+    margin: 0 auto;
+  }
+  &__link {
+    color: $white;
+    &:hover {
+      color: $blue-accent;
+      padding-bottom: 7px;
+      border-bottom: 1px solid $blue-accent;
+    }
+    &--active {
+      color: $blue-accent;
+      padding-bottom: 7px;
+      border-bottom: 1px solid $blue-accent;
+    }
   }
 }
-
 
 
 @media (max-width: 990px) {
@@ -25,7 +50,7 @@
       bottom: 0;
       left: 0;
       height: 100vh;
-      background-color: $dark;
+      background-color: $body;
       z-index: 100;
       transform: translateY(-200%);
       transition: transform .5s;
