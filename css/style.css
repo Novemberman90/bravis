@@ -1302,5 +1302,11 @@ a {
     font-size: 20px;
     line-height: 20px;
     padding-left: 0; } }
+@media (max-width: 440px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_footer\.scss}line{font-family:\0000374}}
+  .footer__phone {
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none; } }
 
 /*# sourceMappingURL=style.css.map */
