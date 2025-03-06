@@ -37,10 +37,18 @@
 }
 
 
-@media (max-width: 990px) {
-
+@media (max-width: 998px) {
+  .header {
+    &__logo {
+      display: none;
+    }
+    &__inner {
+      justify-content: flex-end;
+    }
+  }
   .menu {
-    &__block {
+    margin: 0;
+    &__list {
       flex-direction: column;
       justify-content: center;
       align-items: center;

@@ -419,14 +419,36 @@
     </div>
   </footer>
 
-  <div class="instruction product">
-    <div class="container">
-      <div class="product__wrapper">
+  <div class="popup" data-popup='instruction'>
+    <div class="popup__dialog">
+      <div class="popup__panel">
+        <h2 class="popup__title">LED-телевізор Bravis 24K4000H</h2>
+        <button class="popup__close">
+          <svg id="Группа_7" data-name="Группа 7" xmlns="http://www.w3.org/2000/svg" width="18.18" height="18.188"
+            viewBox="0 0 18.18 18.188">
+            <defs>
+              <style>
+                .cls-1 {
+                  fill: none;
+                  stroke: #909eac;
+                  stroke-width: 2px;
+                  fill-rule: evenodd;
+                }
+              </style>
+            </defs>
+            <path id="Фигура_1" data-name="Фигура 1" class="cls-1" d="M1641.6,72.6l16.8,16.8"
+              transform="translate(-1640.91 -71.906)" />
+            <path id="Фигура_1_копия" data-name="Фигура 1 копия" class="cls-1" d="M1658.4,72.6l-16.8,16.8"
+              transform="translate(-1640.91 -71.906)" />
+          </svg>
+        </button>
+      </div>
+      <div class="product">
         <div class="product__inner">
-          <div class="product__slider instruction-slider">
+          <div class="product__slider product-slider">
             <div class="product-slider__big">
-              <div class="product-instruction-slider__big-item">
-                <img class="product-instruction-slider__big-img" src="./images/instructions/instruction-big.webp" alt="bravis img">
+              <div class="product-slider__big-item">
+                <img class="product-slider__big-img" src="./images/instructions/instruction-big.webp" alt="bravis img">
               </div>
             </div>
             <div class="product-slider__thumb-wrapper">
@@ -442,9 +464,15 @@
                 </div>
               </div>
             </div>
+            <div class="product-slider__pagination">
+              <span class="product-slider__bullet product-slider__bullet--active"></span>
+              <span class="product-slider__bullet"></span>
+              <span class="product-slider__bullet"></span>
+              <span class="product-slider__bullet"></span>
+            </div>
           </div>
           <div class="product__content">
-            <a class="product__content-link product__nav-link-new" href="#">Новинка</a>
+            <a class="product__content-link product__content-link--new" href="#">Новинка</a>
             <ul class="product__nav-list">
               <li class="product__nav-item">
                 <div>Артикул:</div><div>24K4000H</div>
@@ -459,27 +487,652 @@
                 <div>Операційна система:</div><div>без ОС</div>
               </li>
             </ul>
-            <a class="product__nav-link product__nav-link-buy" href="#">Де купити</a>
+            <a class="product__content-link product__content-link--buy" href="#">Де купити</a>
           </div>
         </div>
         <div class="product-descr">
           <div class="product-tabs">
-            <div class="product-tabs__top">
-              <a class="product-tabs__top-item product-tabs__top-item--active" href="#tab-1">Опис</a>
-              <a class="product-tabs__top-item" href="#tab-2">Характеристики</a>
-              <a class="product-tabs__top-item" href="#tab-3">ПЗ та Інструкції</a>
+            <div class="product-tabs__nav">
+              <a class="product-tabs__nav-item " href="#tab-1">Опис</a>
+              <a class="product-tabs__nav-item" href="#tab-2">Характеристики</a>
+              <a class="product-tabs__nav-item product-tabs__nav-item--active" href="#tab-3">ПЗ та Інструкції</a>
             </div>
             <div class="product-tabs__content">
               <div class="product-tabs__content-item" id="tab-1">
                 <div class="description">Опис</div>
               </div>
               <div class="product-tabs__content-item" id="tab-2">
-                <div class="specs">Characteristics</div>
+                <div class="specs">
+                  <h2 class="product-tabs__content-title">LED-телевізор Bravis 24K4000H</h2>
+                  <section class="table">
+                    <header class="table__header">
+                      <h4 class="table__title">Файл</h4>
+                      <h4 class="table__title">Опис</h4>
+                    </header>
+                    <ul class="table__body">
+                      <li class="table__item table__item--specs">
+                        <div class="table__cell">
+                          123.pdf (7,22 мб)
+                        </div>
+                        <div class="table__cell">
+                          User manual Bravis 24K4000H
+                        </div>
+                      </li>
+                    </ul>
+                  </section>
+                </div>
+              </div>
+              <div class="product-tabs__content-item product-tabs__content-item--active" id="tab-3">
+                <div class="pz-instr">
+                  <h2 class="product-tabs__content-title">LED-телевізор Bravis 24K4000H</h2>
+                  <section class="table">
+                    <header class="table__header">
+                      <h4 class="table__title">Файл</h4>
+                      <h4 class="table__title">Опис</h4>
+                    </header>
+                    <ul class="table__body">
+                      <li class="table__item table__item--pz-instr">
+                        <div class="table__cell">
+                          123.pdf (7,22 мб)
+                        </div>
+                        <div class="table__cell">
+                          User manual Bravis 24K4000H
+                        </div>
+                      </li>
+                    </ul>
+                  </section>
+                </div>
               </div>
             </div>
-              <div class="product-tabs__content-item product-tabs__content-item--active" id="tab-3">
-                <div class="pz-inst">pz-instruction</div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="popup popup--active" data-popup='tovar'>
+    <div class="popup__dialog">
+      <div class="popup__panel">
+        <h2 class="popup__title">LED-телевізор Bravis 24K4000H</h2>
+        <button class="popup__close">
+          <svg id="Группа_7" data-name="Группа 7" xmlns="http://www.w3.org/2000/svg" width="18.18" height="18.188"
+            viewBox="0 0 18.18 18.188">
+            <defs>
+              <style>
+                .cls-1 {
+                  fill: none;
+                  stroke: #909eac;
+                  stroke-width: 2px;
+                  fill-rule: evenodd;
+                }
+              </style>
+            </defs>
+            <path id="Фигура_1" data-name="Фигура 1" class="cls-1" d="M1641.6,72.6l16.8,16.8"
+              transform="translate(-1640.91 -71.906)" />
+            <path id="Фигура_1_копия" data-name="Фигура 1 копия" class="cls-1" d="M1658.4,72.6l-16.8,16.8"
+              transform="translate(-1640.91 -71.906)" />
+          </svg>
+        </button>
+      </div>
+      <div class="product">
+        <div class="product__inner">
+          <div class="product__slider product-slider">
+            <div class="product-slider__big">
+              <div class="product-slider__big-item">
+                <img class="product-slider__big-img" src="./images/instructions/instruction-big.webp" alt="bravis img">
               </div>
+            </div>
+            <div class="product-slider__thumb-wrapper">
+              <div class="product-slider__thumb">
+                <div class="product-slider__thumb-item">
+                  <img class="product-slider__thumb-img" src="./images/instructions/instruction-thumb-1.webp" alt="bravis img">
+                </div>
+                <div class="product-slider__thumb-item">
+                  <img class="product-slider__thumb-img" src="./images/instructions/instruction-thumb-2.webp" alt="bravis img">
+                </div>
+                <div class="product-slider__thumb-item">
+                  <img class="product-slider__thumb-img" src="./images/instructions/instruction-thumb-3.webp" alt="bravis img">
+                </div>
+              </div>
+            </div>
+            <div class="product-slider__pagination">
+              <span class="product-slider__bullet product-slider__bullet--active"></span>
+              <span class="product-slider__bullet"></span>
+              <span class="product-slider__bullet"></span>
+              <span class="product-slider__bullet"></span>
+            </div>
+          </div>
+          <div class="product__content">
+            <a class="product__content-link product__content-link--new" href="#">Новинка</a>
+            <ul class="product__nav-list">
+              <li class="product__nav-item">
+                <div>Артикул:</div><div>24K4000H</div>
+              </li>
+              <li class="product__nav-item">
+               <div>Діагональ екрана:</div><div>24"</div>
+              </li>
+              <li class="product__nav-item">
+                <div>Роздільна здатність:</div><div>1366 x 768</div>
+              </li>
+              <li class="product__nav-item">
+                <div>Операційна система:</div><div>без ОС</div>
+              </li>
+            </ul>
+            <a class="product__content-link product__content-link--buy" href="#">Де купити</a>
+          </div>
+        </div>
+        <div class="product-descr">
+          <div class="product-tabs">
+            <div class="product-tabs__nav">
+              <a class="product-tabs__nav-item " href="#tab-1">Опис</a>
+              <a class="product-tabs__nav-item product-tabs__nav-item--active" href="#tab-2">Характеристики</a>
+              <a class="product-tabs__nav-item" href="#tab-3">ПЗ та Інструкції</a>
+            </div>
+            <div class="product-tabs__content">
+              <div class="product-tabs__content-item" id="tab-1">
+                <div class="description">Опис</div>
+              </div>
+              <div class="product-tabs__content-item product-tabs__content-item--active" id="tab-2">
+                <div class="specs">
+                  <h2 class="product-tabs__content-title">LED-телевізор Bravis 24K4000H</h2>
+                  <section class="table">
+                    <header class="table__header">
+                      <h4 class="table__title">Екран</h4>
+                    </header>
+                    <ul class="table__body">
+                      <li class="table__item table__item--specs">
+                        <div class="table__cell">
+                          Тип
+                        </div>
+                        <div class="table__cell">
+                          LED
+                        </div>
+                      </li>
+                      <li class="table__item table__item--specs">
+                        <div class="table__cell">
+                          Тип підсвітки
+                        </div>
+                        <div class="table__cell">
+                          Direct LED
+                        </div>
+                      </li>
+                      <li class="table__item table__item--specs">
+                        <div class="table__cell">
+                          Діагональ
+                        </div>
+                        <div class="table__cell">
+                          24"
+                        </div>
+                      </li>
+                      <li class="table__item table__item--specs">
+                        <div class="table__cell">
+                          Роздільна здатність
+                        </div>
+                        <div class="table__cell">
+                          HD (1366x768)
+                        </div>
+                      </li>
+                      <li class="table__item table__item--specs">
+                        <div class="table__cell">
+                          Частота розгортки екрана
+                        </div>
+                        <div class="table__cell">
+                          60 Гц
+                        </div>
+                      </li>
+                      <li class="table__item table__item--specs">
+                        <div class="table__cell">
+                          Тип матриці
+                        </div>
+                        <div class="table__cell">
+                          VA
+                        </div>
+                      </li>
+                      <li class="table__item table__item--specs">
+                        <div class="table__cell">
+                          Час відгуку
+                        </div>
+                        <div class="table__cell">
+                          11.5 мс
+                        </div>
+                      </li>
+                      <li class="table__item table__item--specs">
+                        <div class="table__cell">
+                          Покриття екрану
+                        </div>
+                        <div class="table__cell">
+                          Глянсове
+                        </div>
+                      </li>
+                      <li class="table__item table__item--specs">
+                        <div class="table__cell">
+                          Яскравість (типова)
+                        </div>
+                        <div class="table__cell">
+                          200 кд/м²
+                        </div>
+                      </li>
+                      <li class="table__item table__item--specs">
+                        <div class="table__cell">
+                          Контрастність (типова)
+                        </div>
+                        <div class="table__cell">
+                          3000 : 1
+                        </div>
+                      </li>
+                      <li class="table__item table__item--specs">
+                        <div class="table__cell">
+                          Кількість кольорів
+                        </div>
+                        <div class="table__cell">
+                          16.7 млн
+                        </div>
+                      </li>
+                      <li class="table__item table__item--specs">
+                        <div class="table__cell">
+                          Кут огляду
+                        </div>
+                        <div class="table__cell">
+                          178° / 178°
+                        </div>
+                      </li>
+                      <li class="table__item table__item--specs">
+                        <div class="table__cell">
+                          Співвідношення сторін
+                        </div>
+                        <div class="table__cell">
+                          16 : 9
+                        </div>
+                      </li>
+                      <li class="table__item table__item--specs">
+                        <div class="table__cell">
+                          Технології поліпшення зображення
+                        </div>
+                        <div class="table__cell">
+                          Dynamic Noise Reduction (DNR) <br>
+                          3D Comb Filter"
+                        </div>
+                      </li>
+                    </ul>
+                  </section>
+                  <section class="table">
+                    <header class="table__header">
+                      <h4 class="table__title">Продуктивність</h4>
+                    </header>
+                    <ul class="table__body">
+                      <li class="table__item table__item--specs">
+                        <div class="table__cell">
+                          Smart OS
+                        </div>
+                        <div class="table__cell">
+                          Без ОС
+                        </div>
+                      </li>
+                      <li class="table__item table__item--specs">
+                        <div class="table__cell">
+                          Обсяг ОЗП
+                        </div>
+                        <div class="table__cell">
+                          128 Мб
+                        </div>
+                      </li>
+                      <li class="table__item table__item--specs">
+                        <div class="table__cell">
+                          Постійна пам'ять
+                        </div>
+                        <div class="table__cell">
+                          8 ГБ
+                        </div>
+                      </li>
+                      <li class="table__item table__item--specs">
+                        <div class="table__cell">
+                          Центральний процесор
+                        </div>
+                        <div class="table__cell">
+                          MStar MSD3663
+                        </div>
+                      </li>
+                      <li class="table__item table__item--specs">
+                        <div class="table__cell">
+                          Графічний процесор
+                        </div>
+                        <div class="table__cell">
+                          -
+                        </div>
+                      </li>
+                    </ul>
+                  </section>
+                  <section class="table">
+                    <header class="table__header">
+                      <h4 class="table__title">Звук</h4>
+                    </header>
+                    <ul class="table__body">
+                      <li class="table__item table__item--specs">
+                        <div class="table__cell">
+                          Розміщення динаміків
+                        </div>
+                        <div class="table__cell">
+                          Нижня сторона
+                        </div>
+                      </li>
+                      <li class="table__item table__item--specs">
+                        <div class="table__cell">
+                          К-сть динаміків
+                        </div>
+                        <div class="table__cell">
+                          2
+                        </div>
+                      </li>
+                      <li class="table__item table__item--specs">
+                        <div class="table__cell">
+                          Сумарна потужність звуку
+                        </div>
+                        <div class="table__cell">
+                          4 Вт
+                        </div>
+                      </li>
+                      <li class="table__item table__item--specs">
+                        <div class="table__cell">
+                          Технології поліпшення звуку
+                        </div>
+                        <div class="table__cell">
+                          Dolby Audio/Dolby+ Sound surround
+                        </div>
+                      </li>
+                    </ul>
+                  </section>
+                  <section class="table">
+                    <header class="table__header">
+                      <h4 class="table__title">Підключення</h4>
+                    </header>
+                    <ul class="table__body">
+                      <li class="table__item table__item--specs">
+                        <div class="table__cell">
+                          ТВ-тюнери
+                        </div>
+                        <div class="table__cell">
+                          DVB-T/T2/С/S2
+                        </div>
+                      </li>
+                      <li class="table__item table__item--specs">
+                        <div class="table__cell">
+                          HDMI
+                        </div>
+                        <div class="table__cell">
+                          2 x HDMI 1.4
+                        </div>
+                      </li>
+                      <li class="table__item table__item--specs">
+                        <div class="table__cell">
+                          USB
+                        </div>
+                        <div class="table__cell">
+                          1 x USB 2.0
+                        </div>
+                      </li>
+                      <li class="table__item table__item--specs">
+                        <div class="table__cell">
+                          RJ-45 (LAN)
+                        </div>
+                        <div class="table__cell">
+                          -
+                        </div>
+                      </li>
+                      <li class="table__item table__item--specs">
+                        <div class="table__cell">
+                          CI/CI+ слот
+                        </div>
+                        <div class="table__cell">
+                          1
+                        </div>
+                      </li>
+                      <li class="table__item table__item--specs">
+                        <div class="table__cell">
+                          Гніздо для навушників
+                        </div>
+                        <div class="table__cell">
+                          1
+                        </div>
+                      </li>
+                      <li class="table__item table__item--specs">
+                        <div class="table__cell">
+                          Вихід S/PDIF (оптичний)
+                        </div>
+                        <div class="table__cell">
+                          1
+                        </div>
+                      </li>
+                      <li class="table__item table__item--specs">
+                        <div class="table__cell">
+                          Антенний вхід (RF IN)
+                        </div>
+                        <div class="table__cell">
+                          2
+                        </div>
+                      </li>
+                      <li class="table__item table__item--specs">
+                        <div class="table__cell">
+                          Композитний (Mini AV 3.5 mm)
+                        </div>
+                        <div class="table__cell">
+                          1
+                        </div>
+                      </li>
+                      <li class="table__item table__item--specs">
+                        <div class="table__cell">
+                          Wi-Fi
+                        </div>
+                        <div class="table__cell">
+                          -
+                        </div>
+                      </li>
+                      <li class="table__item table__item--specs">
+                        <div class="table__cell">
+                          Bluetooth
+                        </div>
+                        <div class="table__cell">
+                          -
+                        </div>
+                      </li>
+                      <li class="table__item table__item--specs">
+                        <div class="table__cell">
+                          Підключення пульта
+                        </div>
+                        <div class="table__cell">
+                          IR
+                        </div>
+                      </li>
+                    </ul>
+                  </section>
+                  <section class="table">
+                    <header class="table__header">
+                      <h4 class="table__title">Габарити</h4>
+                    </header>
+                    <ul class="table__body">
+                      <li class="table__item table__item--specs">
+                        <div class="table__cell">
+                          Кріплення VESA
+                        </div>
+                        <div class="table__cell">
+                          200x100 мм
+                        </div>
+                      </li>
+                      <li class="table__item table__item--specs">
+                        <div class="table__cell">
+                          Розміри без підставки (Ш х В х Г), мм
+                        </div>
+                        <div class="table__cell">
+                          552.9 х 332.6 х 86.3 мм
+                        </div>
+                      </li>
+                      <li class="table__item table__item--specs">
+                        <div class="table__cell">
+                          Розміри з підставкою (Ш х В х Г), мм
+                        </div>
+                        <div class="table__cell">
+                          552.9 х 369.7 х 144.1 мм
+                        </div>
+                      </li>
+                      <li class="table__item table__item--specs">
+                        <div class="table__cell">
+                          Розміри коробки (Ш х В х Г), мм
+                        </div>
+                        <div class="table__cell">
+                          583 х 375 х 102 мм
+                        </div>
+                      </li>
+                      <li class="table__item table__item--specs">
+                        <div class="table__cell">
+                          Розташування ніжок
+                        </div>
+                        <div class="table__cell">
+                          Бокові
+                        </div>
+                      </li>
+                      <li class="table__item table__item--specs">
+                        <div class="table__cell">
+                          Вага (нетто), кг
+                        </div>
+                        <div class="table__cell">
+                          2.5 кг
+                        </div>
+                      </li>
+                      <li class="table__item table__item--specs">
+                        <div class="table__cell">
+                          Вага з пакуванням, кг
+                        </div>
+                        <div class="table__cell">
+                          3.0 кг
+                        </div>
+                      </li>
+                    </ul>
+                  </section>
+                  <section class="table">
+                    <header class="table__header">
+                      <h4 class="table__title">Формати</h4>
+                    </header>
+                    <ul class="table__body">
+                      <li class="table__item table__item--specs">
+                        <div class="table__cell">
+                          Відео
+                        </div>
+                        <div class="table__cell">
+                          MPEG1/ 2/ 4/ H.264/ H.265
+                        </div>
+                      </li>
+                      <li class="table__item table__item--specs">
+                        <div class="table__cell">
+                          Аудіо
+                        </div>
+                        <div class="table__cell">
+                          MPEG-1/2 Layer 3, Dolby Digital, AC-3
+                        </div>
+                      </li>
+                      <li class="table__item table__item--specs">
+                        <div class="table__cell">
+                          Фото
+                        </div>
+                        <div class="table__cell">
+                          jpg, bmp, png
+                        </div>
+                      </li>
+                    </ul>
+                  </section>
+                  <section class="table">
+                    <header class="table__header">
+                      <h4 class="table__title">Інше</h4>
+                    </header>
+                    <ul class="table__body">
+                      <li class="table__item table__item--specs">
+                        <div class="table__cell">
+                          Колір
+                        </div>
+                        <div class="table__cell">
+                          Чорний
+                        </div>
+                      </li>
+                      <li class="table__item table__item--specs">
+                        <div class="table__cell">
+                          Додаткові особливості
+                        </div>
+                        <div class="table__cell">
+                          Телетекст, таймер сну, <br>
+                          батьківський контроль, режим готелю
+                        </div>
+                      </li>
+                      <li class="table__item table__item--specs">
+                        <div class="table__cell">
+                          Клас енергоспоживання
+                        </div>
+                        <div class="table__cell">
+                          А
+                        </div>
+                      </li>
+                      <li class="table__item table__item--specs">
+                        <div class="table__cell">
+                          Енергоспоживання, Вт
+                        </div>
+                        <div class="table__cell">
+                          45 Вт
+                        </div>
+                      </li>
+                      <li class="table__item table__item--specs">
+                        <div class="table__cell">
+                          У режимі очікування, Вт
+                        </div>
+                        <div class="table__cell">
+                          <0,5 Вт
+                        </div>
+                      </li>
+                      <li class="table__item table__item--specs">
+                        <div class="table__cell">
+                          Живлення
+                        </div>
+                        <div class="table__cell">
+                           100-240 В - 50/60 Гц
+                        </div>
+                      </li>
+                      <li class="table__item table__item--specs">
+                        <div class="table__cell">
+                          Комплектація
+                        </div>
+                        <div class="table__cell">
+                          Телевізор, пульт керування, батарейки, <br> гарантійний талон, інструкція
+                        </div>
+                      </li>
+                      <li class="table__item table__item--specs">
+                        <div class="table__cell">
+                          Гарантійний термін
+                        </div>
+                        <div class="table__cell">
+                          12 місяців
+                        </div>
+                      </li>
+                    </ul>
+                  </section>
+                </div>
+              </div>
+              <div class="product-tabs__content-item" id="tab-3">
+                <div class="pz-instr">
+                  <h2 class="product-tabs__content-title">LED-телевізор Bravis 24K4000H</h2>
+                  <section class="table">
+                    <header class="table__header">
+                      <h4 class="table__title">Файл</h4>
+                      <h4 class="table__title">Опис</h4>
+                    </header>
+                    <ul class="table__body">
+                      <li class="table__item table__item--pz-instr">
+                        <div class="table__cell">
+                          123.pdf (7,22 мб)
+                        </div>
+                        <div class="table__cell">
+                          User manual Bravis 24K4000H
+                        </div>
+                      </li>
+                    </ul>
+                  </section>
+                </div>
+              </div>
+            </div>
             </div>
         </div>
       </div>
