@@ -113,6 +113,8 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+/* catalog */
 .catalog {
   padding: 100px 0;
   &__title {
@@ -126,6 +128,7 @@
     display: none;
   }
 }
+
 .catalog-card {
   display: flex;
   justify-content: space-between;
@@ -225,6 +228,78 @@
     }
   }
 }
+
+/* baner slider  */
+.baner {
+  &__wrapper {
+    position: relative;
+  }
+}
+.baner-slider {
+  &__slide {
+    position: relative;
+    width: 100%;
+    height: 660px;
+  }
+  &__bg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  &__container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 100%;
+    
+  }
+  &__content {
+    padding: 180px 0 80px;
+    max-width: 500px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    p {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+  }
+  &__title{
+    @extend %Montserrat-500;
+    font-size: 36px;
+    color: $blue-accent;
+  }
+  &__pagination {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &__bullet {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: $baner-bullet;
+    &--active {
+      background-color: $baner-bullet-active;
+    }
+  }
+}
+
+/* partner */
 .partner {
   padding: 90px 0 130px;
   &__title {
@@ -246,6 +321,8 @@
     align-items: center;
   }
 }
+
+/* warranty */
 .warranty {
   
   padding: 50px 0;
@@ -320,6 +397,7 @@
   }
 }
 
+/* promo */
 .promo {
   padding: 80px 0;
   overflow: hidden;
@@ -522,8 +600,6 @@
   padding-top: 110px;
 }
 
-
-
 .product-tabs {
   &__nav {
     display: flex;
@@ -576,6 +652,7 @@
   }
 }
 
+/* table in tabs */
 .table {
   &__header {
     background-color: $table-grey;
@@ -601,7 +678,22 @@
     }
   }
 }
-@media(max-width: 1220px) {
+@media(max-width: 1240px) {
+  .baner-slider {
+    &__bg {
+      height: 430px;
+    }
+    &__container {
+      justify-content: center;
+    }
+    &__content {
+      padding: 0 0 60px;
+      justify-content: flex-end;
+    }
+    &__img {
+      display: none;
+    }
+  }
   .warranty {
     &__img {
       max-width: 589px;
@@ -623,7 +715,6 @@
       justify-content: center;
     }
   }
-
   .promo {
     padding-top: 0;
     &__inner {
@@ -745,6 +836,21 @@
       text-align: center;
     }
   }
+  .baner-slider {
+  &__slide {
+    height: 730px;
+  }
+  &__bg {
+    background-position: center left;
+  }
+  &__content {
+    text-align: center;
+  }
+  &__title {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+}
   .warranty {
     padding-bottom: 0;
     &__title {
