@@ -5,7 +5,7 @@
   font-weight: 600; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_vars\.scss}line{font-family:\0000325}}
-.catalog-card__size-link, .baner-slider__title, .warranty__title, .promo__title, .popup__title, .product-tabs__content-title, .table__title, .table__item, .footer__number {
+.hero-slider__subtitle, .about__title, .catalog-card__size-link, .baner-slider__title, .warranty__title, .promo__title, .popup__title, .product-tabs__content-title, .table__title, .table__item, .footer__number {
   font-family: 'Montserrat-Medium';
   font-weight: 500; }
 
@@ -23,6 +23,14 @@ body {
 .catalog-card__descr-item {
   font-family: 'Montserrat-ExtraLight';
   font-weight: 200; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_vars\.scss}line{font-family:\0000342}}
+.hero-slider__title {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute; }
 
 @font-face {
   font-family: 'Montserrat-SemiBold';
@@ -323,145 +331,137 @@ a {
         transition: bottom .3s, -webkit-transform .3s .15s;
         transition: bottom .3s, transform .3s .15s;
         transition: bottom .3s, transform .3s .15s, -webkit-transform .3s .15s; } }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\000032}}
-.hero {
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\000034}}
+.hero__wrapper {
+  position: relative; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\0000310}}
+.hero-slider__slide {
   position: relative;
-  background-image: url("../images/top-slider/slider-item2.png");
+  width: 100%;
+  height: 550px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\0000315}}
+.hero-slider__bg {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 550px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\0000310}}
-  .hero::before {
-    background-image: url("../images/hero-bg.png");
-    position: absolute;
-    content: '';
-    background-position: top left;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    left: 0;
-    top: 0;
-    bottom: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\0000322}}
-  .hero__inner {
-    padding-top: 60px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\0000325}}
-  .hero__logo {
-    width: 194px;
-    height: auto;
-    -o-object-fit: contain;
-       object-fit: contain; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\0000330}}
-  .hero__slider {
-    position: relative;
-    padding-top: 160px; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\0000336}}
-.top-slider {
+  position: absolute;
+  background-image: url("../images/hero/slider-item.webp");
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  position: relative; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\0000340}}
-  .top-slider__wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\0000344}}
-  .top-slider__slide {
-    height: 100%;
-    width: 100%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\0000349}}
-  .top-slider__slide-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\0000354}}
-  .top-slider__slide-title {
-    font-size: 40px;
-    width: 230px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\0000358}}
-  .top-slider__pagination {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 15px;
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%); }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\0000366}}
-  .top-slider__bullet {
-    background-color: #6e6a66;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    display: inline-block; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\0000372}}
-    .top-slider__bullet--active {
-      background-color: #d7cfc2; }
+  z-index: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\0000327}}
+.hero-slider__container {
+  position: relative;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  height: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\0000334}}
+.hero-slider__content {
+  padding-top: 60px;
+  max-width: 235px;
+  width: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\0000342}}
+.hero-slider__subtitle {
+  font-size: 40px;
+  margin-top: 100px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\0000347}}
+.hero-slider__pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%); }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\0000355}}
+.hero-slider__bullet {
+  background-color: #6e6a66;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\0000361}}
+  .hero-slider__bullet--active {
+    background-color: #d7cfc2; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\0000378}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\0000367}}
 .about {
   padding: 120px 0 160px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\0000384}}
-  .about::after {
-    background-image: url("../images/content/about-bg.png");
-    position: absolute;
-    content: '';
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 100%;
-    right: 0;
-    top: 0;
-    bottom: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\0000396}}
+  position: relative;
+  /*   &::before {
+        background-image: url('../images/hero-bg.png');
+        position: absolute;
+        content: '';
+        background-position: top left;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        left: 0;
+        top: 0;
+        bottom: 0;
+      }
+    &::after {
+      background-image: url('../images/content/about-bg.png');
+      position: absolute;
+      content: '';
+      background-position: right;
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 100%;
+      right: 0;
+      top: 0;
+      bottom: 0;
+    } */ }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\0000398}}
   .about__title {
     margin-bottom: 25px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\0000399}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003102}}
   .about__text {
     max-width: 846px;
     width: 100%;
     line-height: 24px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003103}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003106}}
     .about__text p {
       margin-bottom: 35px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003105}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003108}}
       .about__text p:last-child {
         margin-bottom: 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003111}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003114}}
 .tobuy {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
 
 /* catalog */
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003118}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003121}}
 .catalog {
   padding: 100px 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003120}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003123}}
   .catalog__title {
     text-align: center; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003123}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003126}}
   .catalog__inner {
     padding-top: 50px;
     position: relative; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003127}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003130}}
   .catalog__control-box {
     display: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003132}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003135}}
 .catalog-card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -472,7 +472,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003136}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003139}}
   .catalog-card__item {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -489,35 +489,35 @@ a {
     border-radius: 10px;
     -webkit-transition: all .4s;
     transition: all .4s; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003146}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003149}}
     .catalog-card__item:hover {
       -webkit-transform: scale(1.1);
               transform: scale(1.1);
       -webkit-transition: all .4s;
       transition: all .4s;
       z-index: 5; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003150}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003153}}
       .catalog-card__item:hover .catalog-card__btn--accent {
         -webkit-transition: all .4s;
         transition: all .4s;
         background-color: #dd1657; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003156}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003159}}
   .catalog-card__img {
     width: 100%;
     height: auto;
     -o-object-fit: cover;
        object-fit: cover; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003161}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003164}}
   .catalog-card__content {
     padding: 10px 15px 30px 15px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003164}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003167}}
   .catalog-card ul.catalog-card__size-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     gap: 7px;
     margin-bottom: 20px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003170}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003173}}
   .catalog-card__size-link {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -534,33 +534,33 @@ a {
     background-color: #2b3642;
     font-size: 11px;
     line-height: 27px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003181}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003184}}
     .catalog-card__size-link--active {
       background-color: #1d242b;
       border: 2px solid #0087ae; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003185}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003188}}
     .catalog-card__size-link:hover {
       border: 2px solid #0087ae; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003189}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003192}}
   .catalog-card__title-box {
     margin-bottom: 20px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003192}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003195}}
   .catalog-card__title {
     font-size: 18px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003196}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003199}}
   .catalog-card__subtitle {
     font-size: 14px;
     line-height: 1.3; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003201}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003204}}
   .catalog-card ul.catalog-card__descr-list {
     list-style: disc;
     padding-left: 15px;
     margin-bottom: 30px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003206}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003209}}
   .catalog-card__descr-item {
     font-size: 11px;
     line-height: 1.8; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003211}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003214}}
   .catalog-card__btn {
     display: block;
     padding: 10px 50px;
@@ -571,25 +571,25 @@ a {
     border-radius: 30px;
     margin-bottom: 10px;
     text-align: center; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003222}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003225}}
     .catalog-card__btn:last-child {
       margin-bottom: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003225}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003228}}
     .catalog-card__btn--accent {
       background-color: #0087ae;
       color: #fff; }
 
 /* baner slider  */
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003234}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003237}}
 .baner__wrapper {
   position: relative; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003239}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003242}}
 .baner-slider__slide {
   position: relative;
   width: 100%;
   height: 660px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003244}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003247}}
 .baner-slider__bg {
   background-position: center;
   background-repeat: no-repeat;
@@ -600,7 +600,7 @@ a {
   width: 100%;
   height: 100%;
   z-index: -1; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003255}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003258}}
 .baner-slider__container {
   position: relative;
   z-index: 1;
@@ -614,7 +614,7 @@ a {
       -ms-flex-align: end;
           align-items: flex-end;
   height: 100%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003264}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003266}}
 .baner-slider__content {
   padding: 180px 0 80px;
   max-width: 500px;
@@ -630,15 +630,15 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003272}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003274}}
   .baner-slider__content p {
     font-size: 16px;
     line-height: 1.5; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003277}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003279}}
 .baner-slider__title {
   font-size: 36px;
   color: #0087ae; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003282}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003284}}
 .baner-slider__pagination {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -652,25 +652,25 @@ a {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%); }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003291}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003293}}
 .baner-slider__bullet {
   width: 10px;
   height: 10px;
   border-radius: 50%;
   background-color: #797e82; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003296}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003298}}
   .baner-slider__bullet--active {
     background-color: #d7cfc2; }
 
 /* partner */
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003303}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003305}}
 .partner {
   padding: 90px 0 130px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003305}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003307}}
   .partner__title {
     margin-bottom: 75px;
     text-align: center; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003309}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003311}}
   .partner__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -680,7 +680,7 @@ a {
             justify-content: space-between;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003315}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003317}}
   .partner__link {
     width: 210px;
     height: 120px;
@@ -696,10 +696,10 @@ a {
             align-items: center; }
 
 /* warranty */
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003326}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003328}}
 .warranty {
   padding: 50px 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003329}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003331}}
   .warranty__inner {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -708,24 +708,24 @@ a {
         -ms-flex-pack: start;
             justify-content: start;
     position: relative; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003334}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003336}}
   .warranty__img {
     position: absolute;
     right: -25px;
     top: 50%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%); }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003339}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003341}}
     .warranty__img img {
       width: 100%;
       height: auto;
       -o-object-fit: cover;
          object-fit: cover; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003345}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003347}}
   .warranty__content {
     max-width: 495px;
     width: 100%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003350}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003352}}
   .warranty__title {
     color: #0087ae;
     font-size: 36px;
@@ -736,50 +736,50 @@ a {
         -ms-flex-align: end;
             align-items: flex-end;
     margin-bottom: 35px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003357}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003359}}
     .warranty__title p {
       width: 375px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003359}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003361}}
       .warranty__title p span {
         text-transform: uppercase; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003364}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003366}}
   .warranty__highlight {
     font-size: 90px;
     line-height: 1; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003369}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003371}}
   .warranty__text-box {
     max-width: 400px;
     width: 100%;
     margin-bottom: 25px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003374}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003376}}
   .warranty__text {
     line-height: 1.5;
     color: #fff;
     margin-bottom: 25px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003380}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003382}}
   .warranty__phone {
     display: block;
     font-size: 24px;
     color: #0087ae; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003386}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003388}}
   .warranty__info {
     font-size: 9px;
     line-height: 3.2; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003390}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003392}}
   .warranty__phones-text {
     line-height: 1.5; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003393}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003395}}
   .warranty__phones {
     color: #00aaff;
     line-height: 1.5;
     padding-top: 10px; }
 
 /* promo */
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003401}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003403}}
 .promo {
   padding: 80px 0;
   overflow: hidden; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003404}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003406}}
   .promo__inner {
     position: relative;
     display: -webkit-box;
@@ -788,7 +788,7 @@ a {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003409}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003411}}
   .promo__img {
     position: absolute;
     left: -25%;
@@ -796,62 +796,62 @@ a {
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
     z-index: -1; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003415}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003417}}
     .promo__img img {
       width: 100%;
       height: auto;
       -o-object-fit: cover;
          object-fit: cover; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003421}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003423}}
   .promo__content {
     padding-top: 10px;
     max-width: 540px;
     width: 100%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003427}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003429}}
   .promo__title {
     font-size: 36px;
     color: #0087ae;
     margin-bottom: 25px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003434}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003436}}
   .promo__subtitle {
     font-size: 16px;
     margin-bottom: 25px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003439}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003441}}
   .promo__code {
     color: #0087ae;
     font-size: 18px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003444}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003446}}
   .promo__text {
     font-size: 16px;
     margin-bottom: 30px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003449}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003451}}
   .promo ol.promo__steps {
     margin-top: 10px;
     font-size: 16px;
     line-height: 1.5;
     counter-reset: myCounter;
     list-style: none; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003455}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003457}}
     .promo ol.promo__steps li {
       margin-bottom: 20px;
       padding-left: 35px;
       position: relative; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003459}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003461}}
       .promo ol.promo__steps li::before {
         position: absolute;
         counter-increment: myCounter;
         content: counter(myCounter) ".";
         color: #0087ae;
         left: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003466}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003468}}
       .promo ol.promo__steps li:last-child {
         margin-bottom: 0; }
 
 /* popup */
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003474}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003476}}
 .popup {
   display: none; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003476}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003478}}
   .popup--active {
     display: block;
     position: fixed;
@@ -868,7 +868,7 @@ a {
             align-items: center;
     z-index: 50;
     overflow-y: auto; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003489}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003491}}
   .popup__dialog {
     max-width: 1360px;
     width: 100%;
@@ -876,16 +876,16 @@ a {
     padding: 60px 80px;
     background-color: #e3effa;
     position: relative; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003497}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003499}}
   .popup__panel {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003500}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003502}}
   .popup__title {
     font-size: 30px;
     color: #121212; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003505}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003507}}
   .popup__close {
     border: none;
     background-color: transparent;
@@ -895,13 +895,13 @@ a {
     cursor: pointer; }
 
 /* product */
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003517}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003519}}
 .product__inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding-top: 70px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003521}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003523}}
 .product__slider {
   width: 600px;
   display: -webkit-box;
@@ -912,7 +912,7 @@ a {
           align-items: center;
   margin-left: -80px;
   margin-right: 60px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003528}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003530}}
 .product__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -924,7 +924,7 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003533}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003535}}
 .product__content-link {
   font-size: 14px;
   line-height: 1.4;
@@ -932,17 +932,17 @@ a {
   padding: 10px 60px;
   text-align: center;
   border-radius: 30px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003541}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003543}}
   .product__content-link--new {
     background-color: #dd1657;
     text-transform: uppercase; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003545}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003547}}
   .product__content-link--buy {
     background-color: #0087ae; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003549}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003551}}
 .product ul.product__nav-list {
   margin: 25px 0 40px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003552}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003554}}
 .product__nav-item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -951,23 +951,23 @@ a {
   font-size: 16px;
   color: #121212; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003560}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003562}}
 .product-slider__big {
   width: 500px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003563}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003565}}
 .product-slider__big-item {
   width: 100%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003566}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003568}}
 .product-slider__big-img {
   width: 100%;
   height: auto;
   -o-object-fit: cover;
      object-fit: cover; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003571}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003573}}
 .product-slider__thumb-wrapper {
   width: 100px;
   text-align: center; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003575}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003577}}
 .product-slider__thumb {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -977,7 +977,7 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 60px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003580}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003582}}
 .product-slider__pagination {
   display: none;
   -webkit-box-align: center;
@@ -989,21 +989,21 @@ a {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%); }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003589}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003591}}
 .product-slider__bullet {
   width: 10px;
   height: 10px;
   border-radius: 50%;
   background-color: #cbe0f3; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003594}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003596}}
   .product-slider__bullet--active {
     background-color: #9dbedd; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003599}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003601}}
 .product-descr {
   padding-top: 110px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003604}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003606}}
 .product-tabs__nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1013,17 +1013,17 @@ a {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 30px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003610}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003612}}
 .product-tabs__nav-item {
   font-size: 16px;
   color: #121212;
   padding-bottom: 28px;
   position: relative; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003615}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003617}}
   .product-tabs__nav-item--active {
     position: relative;
     color: #0087ae; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003618}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003620}}
     .product-tabs__nav-item--active::after {
       position: absolute;
       content: '';
@@ -1032,10 +1032,10 @@ a {
       left: 0;
       bottom: 0;
       background-color: #0087ae; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003628}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003630}}
   .product-tabs__nav-item:hover {
     color: #0087ae; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003630}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003632}}
     .product-tabs__nav-item:hover::after {
       position: absolute;
       content: '';
@@ -1044,30 +1044,30 @@ a {
       left: 0;
       bottom: 0;
       background-color: #0087ae; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003641}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003643}}
 .product-tabs__content-item {
   display: none; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003643}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003645}}
   .product-tabs__content-item--active {
     display: block; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003647}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003649}}
 .product-tabs__content-title {
   color: #121212;
   font-size: 24px;
   margin-bottom: 25px; }
 
 /* table in tabs */
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003657}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003659}}
 .table__header {
   background-color: #c0cfdd;
   padding: 10px 25px;
   display: grid;
   grid-template-columns: 1fr 2fr; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003663}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003665}}
 .table__title {
   color: #121212;
   font-size: 18px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003668}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003670}}
 .table__item {
   font-size: 14px;
   color: #121212;
@@ -1075,41 +1075,41 @@ a {
   grid-template-columns: 1fr 2fr;
   padding: 10px 10px 10px 25px;
   border-bottom: 1px solid #c0cfdd; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003676}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003678}}
   .table__item--specs {
     grid-template-columns: 1fr 1fr; }
 
 @media (max-width: 1240px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003683}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003685}}
   .baner-slider__bg {
     height: 430px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003686}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003688}}
   .baner-slider__container {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003689}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003691}}
   .baner-slider__content {
     padding: 0 0 60px;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003693}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003695}}
   .baner-slider__title {
     margin-bottom: 30px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003696}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003698}}
   .baner-slider__img {
     display: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003701}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003703}}
   .warranty__img {
     max-width: 589px; } }
 @media (max-width: 1650px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003708}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003710}}
   .promo__img {
     left: 0; } }
 @media (max-width: 1180px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003715}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003717}}
   .partner__list {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1118,16 +1118,16 @@ a {
         -ms-flex-pack: center;
             justify-content: center; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003721}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003723}}
   .promo {
     padding-top: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003723}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003725}}
     .promo__inner {
       padding-top: 580px;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003727}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003729}}
     .promo__img {
       left: 50%;
       top: 0;
@@ -1137,21 +1137,21 @@ a {
       width: 100%;
       z-index: -1; } }
 @media (max-width: 998px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003739}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003741}}
   .popup__dialog {
     padding: 60px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003742}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003744}}
   .popup__title {
     display: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003747}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003749}}
   .product__inner {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003751}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003753}}
   .product__slider {
     width: 100%;
     -ms-flex-wrap: wrap;
@@ -1159,7 +1159,7 @@ a {
     margin-left: auto;
     margin-right: auto;
     position: relative; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003758}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003760}}
   .product__content {
     max-width: 410px;
     width: 100%;
@@ -1172,43 +1172,75 @@ a {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003765}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003767}}
   .product ul.product__nav-list {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
     margin: 50px auto; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003769}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003771}}
   .product__nav-item {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003772}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003774}}
   .product__content-link {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
     margin-right: 0px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003775}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003777}}
     .product__content-link:last-child {
       margin-right: 0px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003781}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003783}}
   .product-slider__big {
     width: 100%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003784}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003786}}
   .product-slider__thumb-wrapper {
     display: none; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003787}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003789}}
   .product-slider__pagination {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; } }
 @media (max-width: 860px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003793}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003796}}
+  .hero-slider__bg {
+    background-position: top;
+    background-image: url("../images/hero/slider-item-mob.webp"); }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003800}}
+  .hero-slider__logo {
+    display: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003803}}
+  .hero-slider__content {
+    max-width: 350px;
+    padding: 0 0 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003811}}
+  .hero-slider__container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003814}}
+  .hero-slider__subtitle {
+    margin-top: 0;
+    font-size: 38px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003819}}
   .warranty {
     position: relative; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003796}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003822}}
     .warranty__img {
       max-width: 432px;
       top: 0;
@@ -1216,7 +1248,7 @@ a {
       left: 0;
       -webkit-transform: translate(0, 0);
               transform: translate(0, 0); }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003804}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003830}}
     .warranty__inner {
       padding-top: 329px;
       position: static;
@@ -1224,106 +1256,121 @@ a {
           -ms-flex-pack: center;
               justify-content: center; } }
 @media (max-width: 748px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003813}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003839}}
   .promo__title, .promo__subtitle {
     text-align: center; } }
 @media (max-width: 578px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003821}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003847}}
+  .hero-slider__content {
+    padding: 0 0 50px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003852}}
+  .about__title {
+    font-size: 32px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003855}}
+  .about__text {
+    font-size: 14px;
+    line-height: 1.7; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003861}}
   .catalog__control {
     position: absolute;
     top: 50%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%); }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003825}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003865}}
     .catalog__control-prev {
       left: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003828}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003868}}
     .catalog__control-next {
       right: 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003833}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003873}}
   .catalog-card {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003835}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003875}}
     .catalog-card ul.catalog-card__size-list {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003838}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003878}}
     .catalog-card__title-box {
       text-align: center; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003843}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003883}}
   .baner-slider__slide {
     height: 730px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003846}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003886}}
   .baner-slider__bg {
     background-position: center left; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003849}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003889}}
   .baner-slider__content {
     text-align: center; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003852}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003891}}
+    .baner-slider__content p {
+      font-size: 14px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003895}}
   .baner-slider__title {
     font-size: 32px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003856}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003899}}
   .warranty {
     padding-bottom: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003858}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003901}}
     .warranty__title {
       font-size: 28px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003860}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003903}}
       .warranty__title p {
         width: 310px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003864}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003907}}
     .warranty__highlight {
       font-size: 72px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003868}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003911}}
   .promo {
     position: relative; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003870}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003913}}
     .promo__inner {
       position: static;
       padding-top: 540px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003874}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003917}}
     .promo__title {
       font-size: 28px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003879}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003922}}
   .popup__dialog {
     padding-left: 0px;
     padding-right: 0px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003885}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003928}}
   .product-tabs__nav {
     margin-bottom: 15px;
     padding: 0 40px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003889}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003932}}
   .product-tabs__content-title {
     padding: 0 40px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003893}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003936}}
   .product-descr {
     padding-top: 80px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003897}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003940}}
   .table__header {
     padding-left: 40px;
     padding-right: 40px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003901}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003944}}
   .table__item {
     padding-left: 40px; } }
 @media (max-width: 440px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003908}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003951}}
   .warranty__inner {
     padding-top: 330px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003911}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003954}}
   .warranty__img {
     left: -30px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003914}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003957}}
   .warranty__title {
     font-size: 30px;
     -webkit-box-orient: vertical;
@@ -1333,11 +1380,11 @@ a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003918}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003961}}
     .warranty__title p {
       text-align: center;
       width: 100%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003924}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\00003967}}
   .warranty__highlight {
     font-size: 72px; } }
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_footer\.scss}line{font-family:\000031}}
