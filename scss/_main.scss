@@ -1,6 +1,33 @@
 
-.hero {
+.top-wrapper {
+  position: relative;
+  &::before {
+    background-image: url('../images/hero-bg.png');
+    position: absolute;
+    content: '';
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+  }
+  &::after {
+    background-image: url('../images/content/about-bg.png');
+    position: absolute;
+    content: '';
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 35%;
+    right: 0;
+    top: 15%;
+    bottom: 0;
+  }
+}
 
+.hero {
   &__wrapper {
     position: relative;
   }
@@ -22,7 +49,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 0;
+    z-index: -1;
   }
   &__container {
     position: relative;
@@ -69,32 +96,10 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
-/*   &::before {
-      background-image: url('../images/hero-bg.png');
-      position: absolute;
-      content: '';
-      background-position: top left;
-      background-repeat: no-repeat;
-      background-size: cover;
-      width: 100%;
-      left: 0;
-      top: 0;
-      bottom: 0;
-    }
-  &::after {
-    background-image: url('../images/content/about-bg.png');
-    position: absolute;
-    content: '';
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 100%;
-    right: 0;
-    top: 0;
-    bottom: 0;
-  } */
+   &__inner {
+    position: relative;
 
+   }
   &__title {
     @extend %Montserrat-500;
     margin-bottom: 25px;
@@ -686,6 +691,27 @@
     }
   }
 }
+@media(max-width: 1650px) {
+  .top-wrapper {
+    &::after {
+      top: 0;
+      width: 25%;
+    }
+  }
+  .promo {
+    &__img {
+      left: 0;
+    }
+  }
+}
+@media(max-width: 1440px) {
+  .top-wrapper {
+    &::before,
+    &::after {
+      content: none;
+    }
+  }
+}
 @media(max-width: 1240px) {
   .baner-slider {
     &__bg {
@@ -711,13 +737,7 @@
     }
   }
 }
-@media(max-width: 1650px) {
-  .promo {
-    &__img {
-      left: 0;
-    }
-  }
-}
+
 @media(max-width: 1180px) {
   .partner {
     &__list {
@@ -849,13 +869,41 @@
   }
 }
 @media(max-width: 578px) {
+  .top-wrapper {
+    position: relative;
+    &::before {
+    background-image: url('../images/content/about-s.png');
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+      content: '';
+      width: 50%;
+      top: 0;
+      bottom: 0;
+      left: 0;
+    }
+  }
   .hero-slider {
+    position: relative;
+    &::after {
+        position: absolute;
+        background-image: url('../images/content/about-bg-mob.png');
+        background-position: top right;
+        background-repeat: no-repeat;
+        background-size: contain;
+        content: '';
+        width: 100%;
+        top: 50%;
+        bottom: 0;
+        right: 0;
+      }
     &__content {
       padding: 0 0 50px;
     }
   }
   .about {
-    padding: 75px 0;
+    padding: 60px 0 45px;
     &__title {
       font-size: 32px;
       text-align: center;
