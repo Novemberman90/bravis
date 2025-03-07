@@ -146,9 +146,9 @@
     padding-top: 50px;
     position: relative;
   }
-  &__control-box {
+  /* &__control-box {
     display: none;
-  }
+  } */
 }
 
 .catalog-card {
@@ -485,8 +485,8 @@
 
 /* popup */
 .popup {
-  display: none;
-  &--active {
+  
+/*   &--active {
     display: block;
     position: fixed;
     top: 0;
@@ -498,7 +498,7 @@
     align-items: center;
     z-index: 50;
     overflow-y: auto;
-  }
+  } */
   &__dialog {
     max-width: 1360px;
     width: 100%;
