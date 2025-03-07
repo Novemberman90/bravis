@@ -881,7 +881,30 @@
       display: block;
     }
   }
+
+  .baner-slider {
+    &__slide {
+      height: 730px;
+    }
+
+    &__bg {
+      background-position: center left;
+    }
+
+    &__content {
+      text-align: center;
+
+      p {
+        font-size: 14px;
+      }
+    }
+
+    &__title {
+      font-size: 32px;
+    }
+  }
   .catalog {
+    padding: 20px 0 100px;
     &__control {
       position: absolute;
       top: 50%;
@@ -903,23 +926,10 @@
       text-align: center;
     }
   }
-  .baner-slider {
-  &__slide {
-    height: 730px;
+  .partner {
+    padding-top: 0;
   }
-  &__bg {
-    background-position: center left;
-  }
-  &__content {
-    text-align: center;
-    p {
-      font-size: 14px;
-    }
-  }
-  &__title {
-    font-size: 32px;
-  }
-}
+
   .warranty {
     padding-bottom: 0;
     &__title {
