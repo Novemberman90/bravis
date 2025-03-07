@@ -128,6 +128,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-image: url('../images/content/toby-bg.webp');
 }
 
 /* catalog */
@@ -321,19 +322,11 @@
     margin-bottom: 75px;
     text-align: center;
   }
-  &__list {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-
-  }
-  &__link {
-    width: 210px;
-    height: 120px;
-    background-color: $partner-bg;
+  &__inner {
     display: flex;
     justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
   }
 }
 
@@ -928,8 +921,13 @@
   }
   .partner {
     padding-top: 0;
+    &__list {
+      gap: 20px;
+    }
   }
-
+.tobuy {
+  background-image: url('../images/content/toby-bg-s.webp');
+}
   .warranty {
     padding-bottom: 0;
     &__title {
