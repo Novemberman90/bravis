@@ -336,7 +336,7 @@ a {
   position: relative; }
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/GitHub\/bravis\/scss\/_main\.scss}line{font-family:\000034}}
   .top-wrapper::before {
-    background-image: url("../images/hero-bg.png");
+    background-image: url("../images/content/hero-bg.png");
     position: absolute;
     content: '';
     background-position: top left;
