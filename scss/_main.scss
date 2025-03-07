@@ -109,6 +109,19 @@
         margin-bottom: 0;
       }
     }
+    &--mobile{
+      display: none;
+    }
+  }
+  &__read-more {
+    display: none;
+    font-size: 14px;
+    line-height: 1.6;
+    color: $blue-accent;
+    text-decoration: underline;
+    background-color: transparent;
+    border: none;
+    margin-left: auto;
   }
 }
 .tobuy {
@@ -857,6 +870,15 @@
     &__text {
       font-size: 14px;
       line-height: 1.7;
+      &--desctop {
+        display: none;
+      }
+      &--mobile {
+        display: block;
+      }
+    }
+    &__read-more {
+      display: block;
     }
   }
   .catalog {
